@@ -1,3 +1,10 @@
+<?php
+	session_start();
+	
+	if(isset($_SESSION['user']['number'])){
+		header("Location:Home.php");
+	}
+?>
 <html>
 <head>
 <title>Infra Members</title>
