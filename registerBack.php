@@ -21,16 +21,21 @@
 			require 'connect.php';
 			$database = new connect();
 			
-			
-			$pass1 = md5($pass1);
-			
-			$query = "INSERT INTO logins(type,name,number,email,password)VALUES('$type','$name','$number','$email','$pass1')";
-			$resultQuery = mysql_query($query);
-			
-			if($resultQuery == 1){
-				header("Location:Login.php?msg1=Account create successfully... Please Login");
+			$checkNumber = mysql_query("SELECT * FROM logins WHERE number='$number'");
+			if(mysql_num_rows($checkNumber) >= 1){
+				header("Location:Register.php?msg=Number already exist");	
 			}else{
-				header("Location:Register.php?msg=Account create failed. Try again");
+				$pass1 = md5($pass1);
+				
+				$query = "INSERT INTO logins(type,name,number,email,password)VALUES('$type','$name','$number','$email','$pass1')";
+				$resultQuery = mysql_query($query);
+				
+				
+				if($resultQuery == 1){
+					header("Location:Login.php?msg1=Account create successfully... Please Login");
+				}else{
+					header("Location:Register.php?msg=Account create failed. Try again");
+				}
 			}
 			
 		}
