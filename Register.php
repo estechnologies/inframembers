@@ -68,8 +68,7 @@
                                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <select  required="required"  name="Register" id="Registeras" onchange="selectrow1()"  class="form-control">
 								<option value="" disabled selected hidden>Select Register type</option>
-								<option value="Sub-Contractor">Sub-Contractor</option>
-								<option value="Supplier">Supplier</option>
+								<option value="Contractor/Supplier">Contractor/Supplier</option>
 								<option value="EPC Company">EPC Company</option>
 							</select>
                                     </div>

@@ -7,7 +7,7 @@
 ?>
 <html>
 <head>
-<title>Home Infra Members</title>
+<title>Our Clients Infra Members</title>
  <meta charset="utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
  <link rel="shortcut icon" href="/images/logofav.ico" type="image/x-icon" />
@@ -17,39 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-<style>
-
-
-body {
-    background: url(images/HomePage.jpg)no-repeat fixed center;
-    }
-.transparent .title 
-	{
-	text-align: center; 
-	color: #FFF;
-	font-size: 49px; 
-	}
-.transparent .tuyin .plan-name 
-	{
-	font-size: 20px;
-	font-weight: 400;
-	border-bottom: 1px solid #FFF;
-	padding-bottom: 15px;
-	padding: 10px
-	}
-
-
-.transparent .text {
-    margin-top: 60px;
-    font-size: 15px;
-    color: #FFFFFF;
-    text-align: center;
-    font-weight: 300;
-    margin-bottom: 16px;
-    font-size: 18px;
-}
-
-</style>	
+	
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -112,31 +80,7 @@ body {
   </div>
 </nav>
 <div class="container" style="margin-bottom:50px;">
-  <div class="row transparent">
-
-    <div class="col-md-12">
-    		
-		<center>	<span class="title">Welcome to Infra Members</span>
-			 
-			  <div class="text">
-				<p>We are one-of-its-kind online platform, build to bridge the gap between the EPC 
-
-Companies and the Sub-Contractors, Material & Machinery Suppliers. Our intension is 
-
-to provide the EPC companies with a list of execution team having experience in 
-
-various fields & activities so as to cater their needs to accomplish the project on-time 
-
-with the desired quality and also to provide the execution team with a list of 
-
-opportunities where they can perform and prove themselves.</p>
-<p>We developed this platform with a hope to explore the various opportunities available in
-
-the field and to present them visible to the concerned and</p>
-			  </div>
-		  </div>
-		</center>
-  </div>
+ 
   
 </div>
 <footer style="margin-bottom:0px" class="navbar navbar-fixed-bottom footerbottom">

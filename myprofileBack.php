@@ -41,7 +41,7 @@
 		 */
 		function profileUpload($var){
 			$folder = "uploads/";
-			$profile = rand(100,100000).$_FILES[$var]['name'];
+			$profile = rand(100,1000000).$_FILES[$var]['name'];
 			if($profile != null){
 				$profileloc = $_FILES[$var]['tmp_name'];
 				$newProfileName = strtolower($profile);

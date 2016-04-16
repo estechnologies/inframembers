@@ -104,7 +104,7 @@
   <label for="Mobilenumber">Mobile Number*</label>
   <div style="margin-bottom: 12px" class="input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-             <input type="text" name="number" id="number" value="<?php echo $_SESSION['user']['number']; ?>" tabindex="1" oninvalid="InvalidMsg(this);" maxlength="10" oninput="InvalidMsg(this);" required="required" class="form-control" pattern="[0-9]{10}" placeholder="Enter mobile number" value="">                                       
+             <input type="text" name="number" id="number" readonly value="<?php echo $_SESSION['user']['number']; ?>" tabindex="1" oninvalid="InvalidMsg(this);" maxlength="10" oninput="InvalidMsg(this);" required="required" class="form-control" pattern="[0-9]{10}" placeholder="Enter mobile number" value="">                                       
   </div>
 														<label for="password">Current Password*</label>
   <div style="margin-bottom: 12px" class="input-group">

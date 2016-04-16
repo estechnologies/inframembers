@@ -73,7 +73,7 @@
     <li class="headerlinks" ><a style=""  href="MaterialSupplier.php" >Material Supplier</a></li>
     <li class="headerlinks" ><a style=""  href="ManpowerSupplier.php">Manpower Supplier</a></li>
 	<li class="headerlinks" ><a style=""  href="OurClients.php">Our Clients</a></li>
-	<li class="headerlinks" ><a style=""  href="Login.php">Contact Us</a></li>
+	<li class="headerlinks" ><a style=""  href="UserContactus.php">Contact Us</a></li>
   </ul>
     </div>
   </div>
@@ -90,6 +90,16 @@
   </div> </center> 
   
   <div class="panel-body">
+  	
+  	<!-- messages -->
+  	
+  		
+  	<center><p style="color: red;"><?php if(isset($_GET['msg'])){ echo $_GET['msg']; }?></p></center>
+  		<center><p style="color: green;"><?php if(isset($_GET['msg1'])){ echo $_GET['msg1']; }?></p></center>
+  		
+  	<!-- end messages-->
+  	
+  	
    <form id="Login-form" action="postWorkBack.php" method="post" role="form" >
  <center></center>
 		 <center></center>
@@ -97,7 +107,19 @@
   <div style="margin-bottom:6px" class="input-group">
       <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
       <input type="hidden" name="userid" value="<?php echo  $_SESSION['user']['uid']; ?>" />
-     <textarea type="text" name="DescriptionWork" id="DescriptionWork" required="required" placeholder="Enter Work description" class="form-control" ></textarea>
+     <textarea type="text" name="DescriptionWork" id="DescriptionWork" required="required" placeholder="Description of Work to Sub-Contract/ Requirement" class="form-control" ></textarea>
+
+  </div>
+    <label for="ValueWork">Approximate Value of Work*</label>
+  <div style="margin-bottom:6px" class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+     <input type="text" name="ValueWork" id="ValueWork" required="required" placeholder="Enter Value of Work" class="form-control" ></input>
+
+  </div>
+    <label for="LastDate">Last Date*</label>
+  <div style="margin-bottom:6px" class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+     <input type="text" name="LastDate" id="LastDate" required="required" placeholder="Enter format yyyy-MM-dd" class="form-control" ></input>
 
   </div>
   <label for="Location">Location*</label>

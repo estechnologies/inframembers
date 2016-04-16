@@ -23,7 +23,7 @@
 					$resultUpdate = mysql_query($updateQuery);
 					
 					if($resultUpdate == 1){
-						header("Location:ResetPassword.php?msg=Password Update Sucessfull");
+						header("Location:ResetPassword.php?msg1=Password Update Sucessfull");
 					}else{
 						header("Location:ResetPassword.php?msg=Password update failed please try again");
 					}
